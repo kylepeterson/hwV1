@@ -3,6 +3,7 @@
 	This is the menu page for Dawg Pizza
 -->
 
+<!-- Common heading content including meta data and header -->
 <!--#include virtual="header.html" -->
 			<section>
 				<img id="pizza1" src="img/order.jpg">

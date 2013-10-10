@@ -1,9 +1,28 @@
+/* 	Kyle Peterson
+	These are the styles to be used with the Dawg Pizza site. All pages of 
+	Dawg Pizza reference the styles used here */
+
 @import url("reset.css");
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700|Roboto:400,700,400italic);
 
+/* Styles for the entire site */
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: black;
+}
+#content {
+	width: 820px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
 }
 
 /* Header area of the web page */
@@ -20,12 +39,11 @@ a h1 {
 	z-index: 20;	
 	color: rgb(0, 8, 63);
 	font-weight: bold;
-}
-
-#content {
-	width: 820px;
-	margin: 0 auto;
-	margin-bottom: 50px;
+	font-size: 2em;
+	top: 148px;
+	background-color: rgb(156, 117, 202);
+	border-radius: 0 0 20px 20px;
+	padding-bottom: 10px;
 }
 
 .leaf {
@@ -45,18 +63,6 @@ a h1 {
 	left: 38%;
 }
 
-a h1 {
-	font-size: 2em;
-	top: 148px;
-	background-color: rgb(156, 117, 202);
-	border-radius: 0 0 20px 20px;
-	padding-bottom: 10px;
-}
-
-#content {
-	position: relative;
-}
-
 a li {
 	text-decoration: none;
 	display: inline-block;
@@ -74,7 +80,12 @@ a {
 	color: rgb(0, 8, 63);
 }
 
-/* Main Section of the Home page*/
+nav li:hover, nav h1:hover {
+	background-color: rgb(64, 23, 111);
+	color: white;
+}
+
+/* Main Section of the Home page */
 #pizza1 {
 	width: 100%;
 	height:	auto;
@@ -90,6 +101,41 @@ a {
 	left: 38%;
 	top: 67%;
 	padding: .5em;
+}
+
+/* Information section on the home page */
+#info {
+	color: black;
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;	
+}
+
+.info-pane {
+	width: 46%;
+	height: 200px;
+	padding: 2%;
+	margin: 0;
+	float: left;
+	background-color: white;
+	font-size: 1.5em;
+
+}
+
+#info p {
+	padding-bottom: 1em;
+}
+
+#twitter {
+	height: 90px;
+	width: auto;
+}
+
+#menu {
+	background-color: white;
+}
+#info a:hover {
+	text-decoration: underline;
 }
 
 /* Menu Section of the menu page */
@@ -132,51 +178,4 @@ dd, li {
 #about p {
 	padding: 1em;
 }
-/* Information section */
-#info {
-	color: black;
-	margin: 0;
-	font-size: 1em;
-	font-weight: bold;	
-}
 
-.info-pane {
-	width: 46%;
-	height: 200px;
-	padding: 2%;
-	margin: 0;
-	float: left;
-	background-color: white;
-	font-size: 1.5em;
-
-}
-
-#info p {
-	padding-bottom: 1em;
-}
-
-
-.pull-left {
-	float: left;
-}
-
-.pull-right {
-	float: right;
-}
-
-#twitter {
-	height: 90px;
-	width: auto;
-}
-
-#menu {
-	background-color: white;
-}
-#info a:hover {
-	text-decoration: underline;
-}
-
-nav li:hover, nav h1:hover {
-	background-color: rgb(64, 23, 111);
-	color: white;
-}

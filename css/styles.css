@@ -169,6 +169,15 @@ dd, li {
 	padding: 1em;
 }
 
+#menu p {
+	font-weight: bold;
+	padding-bottom: .25em;
+}
+
+strong {
+	font-style: italic;
+}
+
 /* About us section */
 #about {
 	background-color: white;
